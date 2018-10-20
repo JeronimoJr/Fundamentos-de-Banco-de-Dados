@@ -1,0 +1,35 @@
+-- Nome: Francisco Jerônimo da Silva Júnior
+-- Matrícula: 401002
+
+-- Criando database
+ create database empresa2;
+
+-- Criando tabelas
+create table localizacoes_dep(dnumero int, dlocal varchar(20));
+create table departamento (dnome varchar(50), dnumero int, cpf_gerente char(11), data_inicio_gerente date);
+ create table projeto(projnome varchar(50), projnumero int, projlocal varchar(20), dnum int);
+
+
+
+
+-- Inserindo valores
+
+insert into localizacoes_dep (dnumero, dlocal) values(1, 'São Paulo');
+
+insert into localizacoes_dep (dnumero, dlocal) values(4, 'Mauá');
+insert into localizacoes_dep (dnumero, dlocal) values(5, 'Santo André');
+
+insert into localizacoes_dep (dnumero, dlocal) values(5, 'Itu');
+insert into localizacoes_dep (dnumero, dlocal) values(5, 'São Paulo');
+
+
+empresa2=# insert into departamento(dnome, dnumero, cpf_gerente, data_inicio_gerente) values('Pesquisa', 5, '33344555587', '22-05-1988');
+INSERT 0 1
+empresa2=# insert into departamento(dnome, dnumero, cpf_gerente, data_inicio_gerente) values('Administração', 4, '98765432168', '01-01-1996');
+INSERT 0 1
+empresa2=# insert into departamento(dnome, dnumero, cpf_gerente, data_inicio_gerente) values('Matriz', 1, '88866555576', '19-06-1981');
+
+
+
+
+
